@@ -1,0 +1,10 @@
+create table employee 
+(
+  employeeID number(3) CONSTRAINT PKEMPIDNOTSAME primary key,
+  employee_name varchar2(20) CONSTRAINT PKEMPIDNOTNULL not null,
+  employee_address varchar2(40) CONSTRAINT EMPADDCHK check ( employee_address in ('Hyderabad','Chennai','Bangalore','Mumbai','Delhi')),
+  salary number(10) CONSTRAINT SALCHK check ( salary between 0 and 80000),
+  companyaddress varchar2(20) default 'ASV Suntech Park'
+)
+
+insert into employee values (100,'satish','Hyderabad',29000,default)
