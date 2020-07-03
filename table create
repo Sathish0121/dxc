@@ -1,0 +1,31 @@
+
+a) Create Table
+      
+   create table employee
+    ( 
+       employee_id number(3) not null,
+       employee_name varchar2(20),
+       employee_address varchar2(40) not null,
+       date_of_birth  date not null,
+       salary number(8)
+   )
+
+
+
+
+b.) Insert five records
+
+   insert into employee values( 100,' sathish ',' guntur', '05-10-1999','29000')
+
+   insert into employee values( 101,' naveen ',' guntur', '01-10-2000',null)
+   
+   insert into employee values( 103,null,' guntur', '0-11-1999','2000')
+  
+   insert into employee values( 104,' dinesh ',' guntur', '05-10-1899','9000')
+
+   insert into employee values( 105,' ssomesh ',' guntur', '05-10-2001','600')
+
+
+c) Retrieve all the records
+
+solution : select * from employee
