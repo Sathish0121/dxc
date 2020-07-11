@@ -1,0 +1,76 @@
+package org.animals;
+
+public class Elephant {
+	
+	String color="Black";
+    int age=100;
+    int weight=500;
+    public void isVegetarian(){
+        System.out.println("----------Elephant details---------------");
+    	System.out.println("Elephant color is :"+color);
+    	System.out.println("Elephant age is :"+age+"years old");
+    	System.out.println("Elephant weight is :"+weight+"pounds");
+    	System.out.println("heavy weight animal among all");
+    	
+    }
+}
+package org.animals;
+
+public class Lion {
+	
+      String color="Yellow";
+	    int age=80;
+	    int weight=100;
+	    public void getSound(){
+		
+	    	System.out.println("-----------Lion Details----------");
+	    	System.out.println("Lion color is :"+color);
+	    	System.out.println("Lion age is :"+age+"years old");
+	    	System.out.println("Lion weight is :"+weight+"kgs");
+	    	System.out.println("king of forest");
+	    	
+	    }
+
+}
+
+package org.animals;
+
+public class Monkey {
+	
+	
+		
+	    String color="Orange";
+	    int age=60;
+	    int weight=30;
+	    public void canClimb(){
+
+	    	System.out.println("------------Monkey Details-------------");
+	    	System.out.println("Monkey color is :"+color);
+	    	System.out.println("Monkey age is :"+age+"years old");
+	    	System.out.println("Monkey weight is :"+weight+"kgs");
+	    	
+	    }
+
+}
+package zoo;
+
+import org.animals.*;
+
+public class VandalurZoo {
+
+	public static void main(String[] args) {
+		Elephant e=new Elephant();
+		Lion l=new Lion();
+		Monkey m=new Monkey();
+		e.isVegetarian();
+		System.out.println("");
+		
+		l.getSound();
+		System.out.println("");
+		m.canClimb();
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
